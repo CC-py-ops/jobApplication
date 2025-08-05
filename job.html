@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="job.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Join Our Dev Team</h1>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="position">Job Position</label>
+        <select id="position" name="position" required>
+          <option value="">Select a position</option>
+          <option value="frontend">Front-End</option>
+          <option value="backend">Back-End</option>
+          <option value="fullstack">Full-Stack</option>
+          <option value="devops">DevOps</option>
+          <option value="pm">Project Management</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Availability</legend>
+
+          <input
+            type="radio"
+            id="full-time"
+            name="availability"
+            value="full-time"
+            required
+          />
+
+          <label for="full-time">Full-Time</label>
+
+          <input
+            type="radio"
+            id="part-time"
+            name="availability"
+            value="part-time"
+          />
+          <label for="part-time">Part-Time</label>
+        </fieldset>
+
+        <fieldset class="location-group">
+          <legend>Location</legend>
+
+          <input
+            type="radio"
+            id="onsite"
+            name="location"
+            value="onsite"
+            required
+          />
+          <label for="onsite">On-Site</label>
+
+          <input type="radio" id="remote" name="location" value="remote" />
+          <label for="remote">Remote</label>
+
+          <input type="radio" id="hybrid" name="location" value="hybrid" />
+          <label for="hybrid">Hybrid</label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
